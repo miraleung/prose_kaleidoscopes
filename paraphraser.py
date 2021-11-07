@@ -17,7 +17,7 @@ from transformers import T5ForConditionalGeneration, T5Tokenizer
 
 import dataset_io
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 warnings.filterwarnings("ignore")
 

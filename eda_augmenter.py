@@ -10,7 +10,7 @@ import numpy as np
 import dataset_io
 import eda  # From EDA paper
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 class EdaAugmenter:
   REGEX_WORD = re.compile("[a-zA-Z]+")

@@ -1,7 +1,7 @@
 # Utils.
 import os
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def should_continue(in_filepath, out_filepath):
 

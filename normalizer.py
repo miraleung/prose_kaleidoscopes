@@ -5,7 +5,7 @@ import re
 
 from symspellpy import SymSpell, Verbosity
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 class Normalizer:
   # as per recommendation from @freylis, compile once only

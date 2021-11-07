@@ -4,7 +4,7 @@ import hashlib
 import pandas as pd
 import numpy as np
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 # Counts the number of characters in a pandas' dataframe's field.
 def wc(df, field_name, start=0, end=None):

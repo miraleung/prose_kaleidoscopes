@@ -17,7 +17,7 @@ import main_utils
 
 from paraphraser import Paraphraser
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def para(paraphraser, df, field_name, destpath, leven_distp=0.1):
   return paraphraser.augment_df(df, field_name, destpath, leven_distp=leven_distp)

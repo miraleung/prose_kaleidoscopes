@@ -13,6 +13,3 @@ results/*
 
 # Python.
 *__pycache__
-
-# Cleanup scripts
-package_zip.sh

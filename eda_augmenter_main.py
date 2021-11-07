@@ -18,7 +18,7 @@ import eda  # From EDA paper
 import dataset_io
 import main_utils
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def eda_augment(augmenter, df, field_name, destpath):
   return augmenter.eda(df, field_name, destpath)

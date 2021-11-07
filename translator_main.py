@@ -16,6 +16,8 @@ import main_utils
 
 from translator import Translator
 
+__author__ = "Mira Leung"
+
 def main():
   arg_parser = argparse.ArgumentParser("Translator argument parser")
 

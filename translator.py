@@ -7,7 +7,7 @@ import numpy as np
 
 from google.cloud import translate_v2 as google_translate
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 class PyGoogleTrans:
   def __init__(self):

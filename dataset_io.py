@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def _getext(filepath):
   return os.path.splitext(filepath)[1][1:].lower()  # Remove the first dot.

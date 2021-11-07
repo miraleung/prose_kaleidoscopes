@@ -13,7 +13,7 @@ import numpy as np
 # Own files
 import dataset_io
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def get_weights(input_filepath, df, label_field):
   labels = getattr(df, label_field).to_numpy().tolist()

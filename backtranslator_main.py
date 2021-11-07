@@ -16,7 +16,7 @@ import main_utils
 
 from translator import BackTranslator
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def main():
   arg_parser = argparse.ArgumentParser("Backtranslator argument parser")

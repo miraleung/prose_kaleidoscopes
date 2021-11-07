@@ -15,7 +15,7 @@ import main_utils
 
 from normalizer import Normalizer
 
-__author__ = "Anonymized Author of Prose Kaleidoscopes"
+__author__ = "Mira Leung"
 
 def _norm_update(normalizer, df, field_name):
   """
