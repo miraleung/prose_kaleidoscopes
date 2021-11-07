@@ -1,0 +1,18 @@
+# Mac.
+*DS_Store*
+*ignoredir*
+
+# Data and GloVe
+data/*
+glove/*
+results/*
+
+# Vim files.
+*.sw*
+*.vim
+
+# Python.
+*__pycache__
+
+# Cleanup scripts
+package_zip.sh
