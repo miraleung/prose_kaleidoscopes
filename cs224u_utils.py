@@ -99,6 +99,16 @@ def safe_macro_f1(y, y_pred):
     """
     return f1_score(y, y_pred, average='macro', pos_label=None)
 
+def progress_bar(msg, verbose=True):
+    """
+    Simple over-writing progress bar.
+
+    """
+    if verbose:
+        sys.stderr.write('\r')
+        sys.stderr.write(msg)
+        sys.stderr.flush()
+
 
 def fit_classifier_with_hyperparameter_search(
         X, y, basemod, cv, param_grid, scoring='f1_macro', verbose=True):
