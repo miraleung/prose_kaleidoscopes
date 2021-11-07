@@ -8,7 +8,7 @@ from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, f1_score
 import scipy.stats
-import cs224u_utils
+import model_utils
 
 __author__ = "Christopher Potts"
 __version__ = "CS224u, Stanford, Spring 2021"
@@ -87,7 +87,7 @@ def experiment(
         train_func,
         assess_dataframes=None,
         train_size=0.7,
-        score_func=cs224u_utils.safe_macro_f1,
+        score_func=model_utils.safe_macro_f1,
         vectorize=True,
         verbose=True,
         random_state=None,
@@ -250,7 +250,7 @@ def compare_models(
         stats_test=scipy.stats.wilcoxon,
         trials=10,
         train_size=0.7,
-        score_func=cs224u_utils.safe_macro_f1):
+        score_func=model_utils.safe_macro_f1):
     """
     Wrapper for comparing models. The parameters are like those of
     `experiment`, with the same defaults, except

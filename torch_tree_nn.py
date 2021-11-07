@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.utils.data
 from torch_model_base import TorchModelBase
-import cs224u_utils
+import model_utils
 
 __author__ = "Christopher Potts"
 __version__ = "CS224u, Stanford, Spring 2021"
@@ -435,13 +435,13 @@ class TorchTreeNN(TorchModelBase):
 
         """
         preds = self.predict(X, device=device)
-        return cs224u_utils.safe_macro_f1(y, preds)
+        return model_utils.safe_macro_f1(y, preds)
 
 
 def simple_example():
     from nltk.tree import Tree
 
-    cs224u_utils.fix_random_seeds()
+    model_utils.fix_random_seeds()
 
     train = [
         "(odd 1)",

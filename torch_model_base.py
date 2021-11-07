@@ -6,7 +6,7 @@ import pickle
 from sklearn.model_selection import train_test_split
 import torch
 import torch.nn as nn
-import cs224u_utils
+import model_utils
 
 __author__ = "Christopher Potts"
 __version__ = "CS224u, Stanford, Spring 2021"
@@ -384,7 +384,7 @@ class TorchModelBase:
             if self.early_stopping:
                 self._update_no_improvement_count_early_stopping(*dev)
                 if self.no_improvement_count > self.n_iter_no_change:
-                    cs224u_utils.progress_bar(
+                    model_utils.progress_bar(
                         "Stopping after epoch {}. Validation score did "
                         "not improve by tol={} for more than {} epochs. "
                         "Final error is {}".format(iteration, self.tol,
@@ -395,14 +395,14 @@ class TorchModelBase:
             else:
                 self._update_no_improvement_count_errors(epoch_error)
                 if self.no_improvement_count > self.n_iter_no_change:
-                    cs224u_utils.progress_bar(
+                    model_utils.progress_bar(
                         "Stopping after epoch {}. Training loss did "
                         "not improve more than tol={}. Final error "
                         "is {}.".format(iteration, self.tol, epoch_error),
                         verbose=self.display_progress)
                     break
 
-            cs224u_utils.progress_bar(
+            model_utils.progress_bar(
                 "Finished epoch {} of {}; error is {}".format(
                     iteration, self.max_iter, epoch_error),
                 verbose=self.display_progress)
